@@ -1,0 +1,30 @@
+.buttonArea {
+  padding-left: 100px;
+  height: 30%;
+}
+
+.addButtonDesign {
+  color: #66ffff;
+  font-size: 35px;
+  border-radius: 20px;
+  border: 1px solid #66ffff;
+  cursor: pointer;
+  background-color: #000033;
+}
+
+.deleteAllButtonDesign {
+  color: #66ffff;
+  font-size: 35px;
+  background-color: #000033;
+  border-radius: 20px;
+  border: 1px solid #66ffff;
+  cursor: pointer;
+}
+
+.deleteButtonDesign {
+  font-size: 10px;
+  background-color: #000033;
+  border-radius: 10px;
+  border: 1px solid #66ffff;
+  color: #66ffff;
+}
