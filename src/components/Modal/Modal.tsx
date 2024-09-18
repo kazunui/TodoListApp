@@ -31,16 +31,22 @@ function Modal({
   const [deadline, setDeadline] = useState<string>(dateToString);
 
   /**
-   * nameの入力を管理するための関数
+   * テキストエリアの値(name)が変更された際に実行される関数
    */
   const handleName = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setName(e.target.value);
   };
 
+  /**
+   * テキストエリアの値(summary)が変更された際に実行される関数
+   */
   const handleSummary = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setSummary(e.target.value);
   };
 
+  /**
+   * テキストエリアの値(detail)が変更された際に実行される関数
+   */
   const handleDetail = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setDetail(e.target.value);
   };
