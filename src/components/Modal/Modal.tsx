@@ -30,6 +30,9 @@ function Modal({
   const [category, setCategory] = useState<string>(taskCategory);
   const [deadline, setDeadline] = useState<string>(dateToString);
 
+  /**
+   * nameの入力を管理するための関数
+   */
   const handleName = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setName(e.target.value);
   };
