@@ -18,9 +18,8 @@ function Modal({
   taskDeadline,
   handleCloseClick,
 }: ModalType): React.ReactElement {
-  // 日付データを表示用の文字列型に変更
-  const dateToString = taskDeadline.toISOString().slice(0, 16);
-
+  // input type = "date"に表示させるためにスウェーデンの日付形式を使用(yyyy-mm-dd形式)
+  const dateToString = taskDeadline.toLocaleDateString("sv-SE");
   const [id, setId] = useState<number | undefined>(taskId);
   console.log(dateToString);
   const [name, setName] = useState<string>(taskName);
@@ -126,11 +125,7 @@ function Modal({
         </div>
         <div>
           <p>締め切り</p>
-          <input
-            type="datetime-local"
-            value={deadline}
-            onChange={handleDeadline}
-          ></input>
+          <input type="date" value={deadline} onChange={handleDeadline}></input>
         </div>
         <div className={styles.buttonArea}>
           <div>
